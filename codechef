@@ -1,0 +1,22 @@
+import java.util.*;
+public class Shortform{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int i,l;
+String st,st1="",st2="",p1="";
+char ch=0,p=0;
+System.out.println("Enter a name of three words");
+st=sc.nextLine();
+st=" "+st;
+l=st.length();
+p=st.lastIndexOf(" ");
+p1=st.substring(p);
+for(i=0;i<l;i++){
+ch=st.charAt(i);
+if(ch==' ')
+st1=st1+st.charAt(i+1)+".";
+}
+st2=st1+p1;
+System.out.println("Shortform : "+st2);
+}
+}
